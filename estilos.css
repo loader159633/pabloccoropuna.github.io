@@ -3,7 +3,7 @@ body {
     background-image: 
         linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px),
         linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
-    background-size: 20px 20px; /* Tamaño de los cuadrados */
+    background-size: 20px 20px;
     color: #f8fafc;
     font-family: Arial, sans-serif;
     color: #333333;
@@ -26,14 +26,15 @@ body > div {
     border-radius: 12px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
     border-left: 5px solid #0056b3;
-
+    text-align: center;
     animation: fadeIn 1s ease-out forwards;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-.titulo h1 { margin: 0 0 10px 0; font-size: 24px; color: #111; }
-.titulo h2 { margin: 0; font-size: 16px; color: #666; font-weight: normal; }
+.titulo h1 { margin: 0 0 10px 0; font-size: 30px; color: #060d4e;}
+.titulo h2 { margin: 0; font-size: 25px;font-family: Georgia, 'Times New Roman', Times, serif; color: #666; font-weight: normal; }
 
-.s1, .s2, .s3 {
+.s1, .s2, .s3 ,.s4{
     background-color: #ffffff;
     padding: 25px;
     margin-bottom: 20px;
@@ -47,8 +48,9 @@ body > div {
 .s1 { animation-delay: 0.2s; }
 .s2 { animation-delay: 0.4s; }
 .s3 { animation-delay: 0.6s; }
+.s4 { animation-delay: 0.8s; }
 
-.s1 h3, .s2 h3, .s3 h3 {
+.s1 h3, .s2 h3, .s3 h3, .s4 h4 {
     margin-top: 0;
     margin-bottom: 15px;
     color: #0056b3;
@@ -57,21 +59,21 @@ body > div {
 }
 
 .s1-info, .s2-info {
-    list-style: none;
+    list-style: square;
     padding: 0;
     margin: 0;
 }
 
 .s1-info li, .s2-info li {
     padding: 8px 0;
-    border-bottom: 1px dashed #eaeaea;
+    border-bottom: 1px dashed #5d5a5a;
 }
 .s1-info li:last-child, .s2-info li:last-child {
     border-bottom: none;
 }
 
 .ln-link {
-    color: #0077b5;
+    color: #1343bd;
     text-decoration: none;
     font-weight: bold;
     display: inline-block;
@@ -79,25 +81,33 @@ body > div {
 }
 
 .ln-link:hover {
-    color: #004471;
+    color: #b60606;
     transform: translateY(-1px);
 }
 
 .curso {
-    background-color: #fafbfc;
+    background-color: #ffffff;
     padding: 12px;
     margin-bottom: 10px;
     border-radius: 8px;
-    border: 1px solid #e1e8ed;
+    border: 1px solid #a4c1f5;
     transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
 }
 
+.links {
+    background-color: #ffffff;
+    padding: 12px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    border: 1px solid #a4c1f5;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
 .curso:last-child {
     margin-bottom: 0;
 }
 
 .curso:hover {
-    background-color: #f0f4f8;
+    background-color: #abcaea;
     transform: scale(1.01) translateX(3px);
     box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.04);
 }
